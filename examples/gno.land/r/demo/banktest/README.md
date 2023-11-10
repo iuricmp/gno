@@ -99,7 +99,7 @@ use a std.Banker instance to return any deposited coins to the original sender.
 Notice that each realm package has an associated Cosmos address.
 
 
-Finally, the results are rendered via an ABCI query call when you visit [/r/banktest:](/r/banktest:).
+Finally, the results are rendered via an [ABCI](https://github.com/gnolang/gno/blob/master/tm2/pkg/bft/abci/README.md) query call when you visit [/r/banktest:](/r/banktest:).
 
 ```go
 func Render(path string) string {

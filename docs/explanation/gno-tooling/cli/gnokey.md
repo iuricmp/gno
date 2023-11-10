@@ -99,7 +99,7 @@ gnokey import
 
 ## Make an ABCI Query
 
-Make an ABCI Query with the following command.
+Make an [ABCI](https://github.com/gnolang/gno/blob/master/tm2/pkg/bft/abci/README.md) Query with the following command.
 
 ```bash
 gnokey query {QUERY_PATH}

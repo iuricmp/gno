@@ -82,7 +82,7 @@ start the chain.
 
 ## 3. Check the account balance
 
-To check the balance of any account (or the account we just premined), we can use the following ABCI query:
+To check the balance of any account (or the account we just premined), we can use the following [ABCI](https://github.com/gnolang/gno/blob/master/tm2/pkg/bft/abci/README.md) query:
 
 ```bash
 gnokey query --remote localhost:26657 bank/balances/g1qpymzwx4l4cy6cerdyajp9ksvjsf20rk5y9rtt
@@ -92,7 +92,7 @@ Let's break down this command:
 
 - **`--remote`** - the JSON-RPC URL of the running Gno node. In the case of a local deployment, the default value
   is `localhost:26657`
-- **`bank/balances/g1qpymzwx4l4cy6cerdyajp9ksvjsf20rk5y9rtt`** - the ABCI query targets the `bank` module to find
+- **`bank/balances/g1qpymzwx4l4cy6cerdyajp9ksvjsf20rk5y9rtt`** - the [ABCI](https://github.com/gnolang/gno/blob/master/tm2/pkg/bft/abci/README.md) query targets the `bank` module to find
   the `balances` for address `g1qpymzwx4l4cy6cerdyajp9ksvjsf20rk5y9rtt`. Replace the address with your desired address
 
 ![gnokey query](../../assets/getting-started/setting-up-funds/gnokey-query.gif)
@@ -102,5 +102,5 @@ Let's break down this command:
 That's it 🎉
 
 You have successfully premined a native currency balance on a locally-running Gno chain!
-Additionally, you have also learned how to query the native currency balance for an address, using built-in ABCI queries
+Additionally, you have also learned how to query the native currency balance for an address, using built-in [ABCI](https://github.com/gnolang/gno/blob/master/tm2/pkg/bft/abci/README.md) queries
 and the `gnokey` tool.

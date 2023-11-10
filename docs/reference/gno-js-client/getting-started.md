@@ -10,7 +10,7 @@ id: gno-js-getting-started
 ## Key Features
 
 - Provides the ability to interact with Gno Realms / Packages
-- Easy interaction with VM-specific ABCI queries
+- Easy interaction with VM-specific [ABCI](https://github.com/gnolang/gno/blob/master/tm2/pkg/bft/abci/README.md) queries
 
 ## Installation
 

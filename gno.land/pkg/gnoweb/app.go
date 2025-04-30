@@ -122,6 +122,8 @@ func NewRouter(logger *slog.Logger, cfg *AppConfig) (http.Handler, error) {
 		mux.Handle(assetsBase, AssetHandler())
 	}
 
+	mux.Handle("/.well-known/", DevAssetHandler("/.well-known/", "./.well-known/"))
+
 	// Handle status page
 	mux.Handle("/status.json", handlerStatusJSON(logger, client))
 
